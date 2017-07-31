@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C6E01E0F-905A-4487-93C0-20D02D849A94}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharpFoundation</RootNamespace>
+    <AssemblyName>CSharpFoundation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00A-Basics\1.ValueTypes.cs" />
+    <Compile Include="00A-Basics\2a.ReferenceTypes.cs" />
+    <Compile Include="00A-Basics\2b.Arrays.cs" />
+    <Compile Include="00A-Basics\2c.StreamsAndExceptions.cs" />
+    <Compile Include="00A-Basics\3a.DelegesAndEvents.cs" />
+    <Compile Include="00A-Basics\3b.Generics.cs" />
+    <Compile Include="00A-Basics\3c.TypeConversions.cs" />
+    <Compile Include="01A-Advanced\01A-Delegates.cs" />
+    <Compile Include="01A-Advanced\01B-Delegates.cs" />
+    <Compile Include="01A-Advanced\01C-Events.cs" />
+    <Compile Include="01A-Advanced\01D-EventAccessors.cs" />
+    <Compile Include="01A-Advanced\01E-LambdaExpressions.cs" />
+    <Compile Include="01A-Advanced\01F-AnonymousMethods.cs" />
+    <Compile Include="01A-Advanced\02A-Enumerators.cs" />
+    <Compile Include="01A-Advanced\02B-AnonymousTypes.cs" />
+    <Compile Include="01A-Advanced\02C-DynamicBinding.cs" />
+    <Compile Include="01A-Advanced\03A-Attributes.cs" />
+    <Compile Include="01A-Advanced\03B-ExtensionMethods.cs" />
+    <Compile Include="01A-Advanced\03C-PreprocessingDirectives.cs" />
+    <Compile Include="01A-Advanced\04A-RegularExps.cs" />
+    <Compile Include="01A-Advanced\04B-EncodingPgm.cs" />
+    <Compile Include="01A-Advanced\05A-ConfigurationBasics.cs" />
+    <Compile Include="01A-Advanced\05B-AppSettingsConnStrings.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\1a.ArrayLists.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\1b.ArrayListSorting.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\2a.QueueClass.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\2b.StackClass.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\3a.DictionaryClass.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\3b.OtherDictionaryClasses.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\4a.BitOperations.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\4b.CollectionStrings.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\4c.CaseInsensitiveInvariant.cs" />
+    <Compile Include="01B-CollectionsAndGenerics\5a.GenericCollections.cs" />
+    <Compile Include="01B-InputOutput\1a.FileSystemNavigation.cs" />
+    <Compile Include="01B-InputOutput\1b.FileSystemWatch.cs" />
+    <Compile Include="01B-InputOutput\2a.FileOperations.cs" />
+    <Compile Include="01B-InputOutput\2b.BufferedStream.cs" />
+    <Compile Include="01B-InputOutput\3a.CompressedStreams.cs" />
+    <Compile Include="01B-InputOutput\4a.IsolatedStorages.cs" />
+    <Compile Include="01B1-LINQ\01A-Intro1.cs" />
+    <Compile Include="01B1-LINQ\01B-FluentSyntax.cs" />
+    <Compile Include="01B1-LINQ\01C-QueryExpressions.cs" />
+    <Compile Include="01B1-LINQ\01D-DeferredExecution.cs" />
+    <Compile Include="01B1-LINQ\01E-Subqueries.cs" />
+    <Compile Include="01B1-LINQ\02A-Composition.cs" />
+    <Compile Include="01B1-LINQ\02B-Projection.cs" />
+    <Compile Include="01B1-LINQ\02C-InterpretedQueries.cs" />
+    <Compile Include="01B1-LINQ\02D-BulidingQuerExpressions.cs" />
+    <Compile Include="01B2-LINQ Operators\01A-SeqInSeqOut.cs" />
+    <Compile Include="01C-Serialization\1a.Serializers.cs" />
+    <Compile Include="01C-Serialization\1b.SerializableClasses.cs" />
+    <Compile Include="01C-Serialization\1c.SerializationFormat.cs" />
+    <Compile Include="01C-Serialization\2a.XmlSerializers.cs" />
+    <Compile Include="01C-Serialization\2b.XmlSerializableClasses.cs" />
+    <Compile Include="01C-Serialization\2c.SerializeDataset.cs" />
+    <Compile Include="01C-Serialization\2d.CustomSerialization.cs" />
+    <Compile Include="01C-Threading\01A-ThreadBasics.cs" />
+    <Compile Include="01C-Threading\01B-ThreadBasicsMore.cs" />
+    <Compile Include="01C-Threading\01C-ThreadPooling.cs" />
+    <Compile Include="01C-Threading\01D-Synchronization.cs" />
+    <Compile Include="01C-Threading\01E-Locking.cs" />
+    <Compile Include="01C-Threading\01F-SingletonWithMutex.cs" />
+    <Compile Include="01C-Threading\02A-ThreadSafety.cs" />
+    <Compile Include="Program04.cs" />
+    <Compile Include="Program03.cs" />
+    <Compile Include="Program02.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Program01.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="01B-InputOutput\DataFile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="01B-InputOutput\SampleFile.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
