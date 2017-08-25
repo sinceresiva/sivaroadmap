@@ -1,0 +1,8 @@
+C:\Siva\MyRoadMap-Source\CSharp Foundation\CSharpFoundation\bin\Debug\CSharpFoundation.exe.config
+C:\Siva\MyRoadMap-Source\CSharp Foundation\CSharpFoundation\bin\Debug\01B-InputOutput\DataFile.txt
+C:\Siva\MyRoadMap-Source\CSharp Foundation\CSharpFoundation\bin\Debug\01B-InputOutput\SampleFile.txt
+C:\Siva\MyRoadMap-Source\CSharp Foundation\CSharpFoundation\bin\Debug\CSharpFoundation.exe
+C:\Siva\MyRoadMap-Source\CSharp Foundation\CSharpFoundation\bin\Debug\CSharpFoundation.pdb
+C:\Siva\MyRoadMap-Source\CSharp Foundation\CSharpFoundation\obj\x86\Debug\CSharpFoundation.csprojResolveAssemblyReference.cache
+C:\Siva\MyRoadMap-Source\CSharp Foundation\CSharpFoundation\obj\x86\Debug\CSharpFoundation.exe
+C:\Siva\MyRoadMap-Source\CSharp Foundation\CSharpFoundation\obj\x86\Debug\CSharpFoundation.pdb

@@ -1,0 +1,131 @@
+﻿Microsoft Games Studios – Tools and Technology | http://mgstnt
+1
+Tackle Installation Guide
+Version 01.02.01.2501
+Welcome to Tackle. Tackle is a web-based scrum tracking site that provides a rich set of features to help manage small and large teams through their cycle of scrum-based sprints. This guide has been written to assist you in installing Tackle to both your web site and your SQL database server. Additionally, there is more help for a number of different installation scenarios at the end of the document. To find out about all Tackle can do, check the help files after your installation is complete.
+January 26, 2007 [TACKLE INSTALLATION GUIDE]
+Microsoft Games Studios – Tools and Technology | http://mgstnt
+2
+Contents
+Tackle Installation Guide ............................................................................................................................... 1
+Installation Requirements ......................................................................................................................... 3
+Windows Vista ......................................................................................................................................... 3
+Windows Server 2003 ............................................................................................................................... 3
+AJAX ASP.Net RTM Release ....................................................................................................................... 3
+Installing Tackle (Web and Database) ........................................................................................................... 4
+Starting Tackle .......................................................................................................................................... 5
+Other Installation Issues ........................................................................................................................... 6
+Important Things to Know…...................................................................................................................... 6
+Running multiple instances of Tackle on the same server ........................................................................... 7
+Database Setup ........................................................................................................................................ 7
+Web Setup ................................................................................................................................................ 7
+Additional Help ............................................................................................................................................ 8
+January 26, 2007 [TACKLE INSTALLATION GUIDE]
+Microsoft Games Studios – Tools and Technology | http://mgstnt
+3
+Installation Requirements
+ Web - Windows Server 2003, XP or Vista running:
+o IIS 5.1, 6.0 and 7.0
+o ASP.NET 2.0
+o .NET Framework 2.0
+ AJAX ASP.Net RTM Release (see below for more details)
+ Database – Windows Server 2003 or above
+o SQL Server 2005 (RTM or above)
+o SQL Server MUST be in Mixed-Mode (SQL and Windows Login)
+o SQL Server 2005 Express Edition IS supported.
+Windows Vista
+Installing Tackle on Vista is supported but there are a few issues that need to be addressed before and after installation.
+1. Before installation, you should turn off User Access Control (temporarily) as the Installer has known issues when it is turned on.
+2. After installation, the folder Tackle is installed into needs an additional IIS security group added. Please see the Starting Tackle section for more detail.
+Windows Server 2003
+1. After installation, the folder Tackle is installed into needs an additional IIS security group added. Please see the Starting Tackle section for more detail.
+AJAX ASP.Net RTM Release
+Tackle is built using ASP.Net 2.0 and the AJAX ASP.Net Extensions. Before installing Tackle, you need to install the extensions using the ASPAJAXExtSetup.msi installer that can be found alongside the Tackle installer.
+1. Double click ASPAJAXExtSetup.msi to launch the extension installer.
+2. Follow the steps and install the extensions to your server.
+January 26, 2007 [TACKLE INSTALLATION GUIDE]
+Microsoft Games Studios – Tools and Technology | http://mgstnt
+4
+Installing Tackle (Web and Database)
+1. Find the Tackle.msi file and execute it. An introduction dialog should appear.
+2. Click the Next button to move to the next stage in the wizard.
+3. The Tackle setup dialog should now appear:
+4. This dialog contains a number of fields, including:
+a. Database Server: Type the name of the SQL Server 2005 (RTM or above) server and if applicable the instance. For example, MYSQLSER\MYINST
+b. Database Name: Type the name of the catalog or database that Tackle should run against. This database will be automatically created for you by the installer.
+c. IIS Virtual Directory: Type the name of the virtual directory you want setup for accessing Tackle. For instance, setting the virtual directory to Tackle will create an instance accessible at http://localhost/tackle
+i. Note: When installing the web portion of Tackle, you must be on the server that is running the IIS instance you want to install Tackle to. An application pool
+January 26, 2007 [TACKLE INSTALLATION GUIDE]
+Microsoft Games Studios – Tools and Technology | http://mgstnt
+5
+called TackleAppPool will be created automatically and Tackle will run in that application pool.
+d. Tackle Administrator: When Tackle is initially installed, only one user has access to the system. Enter into this field the alias of the person who will be the administrator of the Tackle instance. If an invalid alias is entered, the database will need to be directly modified to update the alias to a valid one.
+e. Language / Numeric Format: Tackle can use either English or British English date formats. Other formats have not been tested but can be attempted by changing the login language of the Tackle user on the SQL Server after installation is complete.
+f. Connect Using: You can connect the SQL database using either your windows credentials or an existing SQL Server account. Select the correct option and input a username and password if required.
+5. Once the dialog has been completed, click Next.
+6. You can now select Complete to install both the Web and Database components.
+7. If you want to customize the install to select only the web or just the database components or to change the installation directory for the web files, choose Custom.
+a. If you choose Custom, you can now disable and enable each component by clicking on the drive icon.
+b. Change the install path of the web files by clicking on Change… and entering a new path.
+Note: If you change the name of the IIS Virtual Directory to something other than Tackle, it is suggested that you change the install directory to match that new name. If you don’t, then you will end up with both a physical and virtual directory in the IIS manager which can cause confusion.
+8. Click Next, and then click Install.
+9. The installer should now begin to install the web components and setup the virtual directory. Following that, the SQL scripts will be executed to install the Tackle database tables, stored procedures, user functions and the initial user permissions. When that is complete, click Finish and you are done!
+Starting Tackle
+Once tackle is installed, head to the tackle instance in your web browser. You should be able to access it at http://localhost/tackle (or at whatever virtual IIS directory you typed in). Once the main tackle page appears, select Master Backlog from the Product menu. If you get an Access Denied message, there is one last step to complete.
+1. Open up Windows Explorer and navigate to the folder that Tackle was installed to (e.g. c:\inetpub\wwwroot\tackle).
+2. Right click on the Tackle folder and select Properties.
+3. Click the Security tab and on Windows Vista only, click Edit…
+January 26, 2007 [TACKLE INSTALLATION GUIDE]
+Microsoft Games Studios – Tools and Technology | http://mgstnt
+6
+4. Click Add… and type into the text box COMPUTERNAME\IIS_WPG, where COMPUTERNAME is the name of the IIS computer. If the IIS_WPG security group has been renamed, also change the name of the IIS_WPG in the text entry.
+5. Ensure the IIS_WPG account is selected and check Modify in the Allow column.
+6. Click OK until all dialogs are dismissed. This should set the security appropriately.
+Other Installation Issues
+ If you get a development error stating that “The user TackleUser is not associated with a trusted connection”, your SQL server is not in mixed-mode. Select Properties from the Database in SQL Server Management Studio, select Security and select SQL Server and Windows Authentication Mode.
+ Tackle XMLNS Installation Issues – If upon running Tackle you hit an ASP.NET error message containing an issue with XMLNS tags, please edit your web.config file and remove any references to the XMLNS tags in the connectionStrings or appSettings tags. We believe the cause of these are the InstallShield 12 installer and although we attempt to remove them on install, it appears that sometimes IS12 changes exactly what it's writing to the web.config file and we don't clean them all up.
+Important Things to Know…
+ A database will automatically be created on the target SQL server even when you do not choose to install the database component. This is due to the installer verifying the database and server availability as the web.config file needs to be updated on installation of the web component.
+ The database data and log files are created in their default locations on the SQL Server. There is no way to customize these paths in the installer. If they need to be moved, detach the database from the SQL Server instance, copy the MDF and LDF files and reattach the database.
+ The web component must be installed on the machine the installer runs on. The Tackle installer does not provide a way to select another IIS instance.
+ On uninstall, the database is not removed nor deleted. The IIS virtual directory and files will only be deleted if you restart IIS before uninstall to unlock any access to the files and folders associated with Tackle. You can manually delete the installation folder and IIS virtual directory if the uninstaller doesn’t remove all the files.
+ The first time Tackle is accessed after install, IIS and ASP.NET needs to compile all the files installed. This causes a delay in accessing the Tackle web site. This will only happen once as all subsequent access by all users will use the pre-compiled files.
+ The Application pool is set to recycle all connections at 6am each day.
+ The Session timeout is set to 480 minutes to ensure that sessions do not timeout during sprint planning meetings (during long periods of discussion and little web activity).
+ Windows SharePoint Services locks down a web server hard. So hard, Tackle can’t run. Install Tackle on a web server that doesn’t contain WSS until we can work out why it won’t run.
+January 26, 2007 [TACKLE INSTALLATION GUIDE]
+Microsoft Games Studios – Tools and Technology | http://mgstnt
+7
+Running multiple instances of Tackle on the same server
+There are certain scenarios where teams may want to run more than one instance of Tackle (web and database) on the same server. This is supported; however, the installer cannot be run on the same machine multiple times. Follow the instructions below to setup other instances of Tackle.
+Database Setup
+Tackle doesn’t install any of the SQL scripts used to generate the database so you have a few options to create new database instances.
+1. The easiest way to setup another instance of the Tackle database is to find another client or server machine to run the Tackle installer on. Just set the SQL Server to the server already containing the Tackle database instance and enter a different database name. Because you can point to a remote SQL Server, you can install as many databases as you can find machines to run the installer on.
+2. The second way to create a new database instance is to backup an existing Tackle database and restore it as a new database. Ask your database administrator to do this if you don’t know how. Note: If you know that you will want to host multiple instances of Tackle on the same server, it is suggested you create a backup of the initial install of the database to ensure you have a clean database to restore. This makes setting up a new Tackle database instance much simpler.
+3. From the installed Tackle database, generate the SQL scripts to create a single SQL Script that contains all the table, procedure and permission information. This may require some cleanup of the script, but gives you the most customized option of creating a new Tackle database instance.
+Web Setup
+Tackle runs in IIS 5.1, 6.0 and 7.0. If you are unfamiliar with setting up and managing IIS applications, please contact someone who is or the Tackle Development team.
+1. Locate the install path of the first Tackle web directory (eg. C:\inetpub\wwwroot\tackle). Select the folder and copy / paste it to create a new folder.
+2. Rename the new folder to something sensible (eg. C:\inetpub\wwwroot\TackleTest)
+3. Open the new folder and open the web.config file for editing. Search for the XML tags containing the connection string:
+<connectionStrings> <add connectionString="Data Source=MYSQLSER\MYINST;Initial Catalog=Tackle;User ID=TackleUser;Password=*&^%$#@!" name="TackleConnectionStringMain" providerName="System.Data.SqlClient"></add> </connectionStrings>
+4. Change the name of the Initial Catalog to the name of the database you created in the previous section.
+5. Now locate the section with the version information:
+January 26, 2007 [TACKLE INSTALLATION GUIDE]
+Microsoft Games Studios – Tools and Technology | http://mgstnt
+8
+<appSettings> <add key="AdminMailAddress" value="alias"></add> <add key="DevMailAddress" value="tntds@microsoft.com"></add> <add key="TackleVersion" value="Version 01.01.11.1701 (Tackle)"></add> </appSettings>
+6. In the TackleVersion key, change the value in the parentheses to the name of the new database. This doesn’t have any connection effect but simply reminds you as a user which instance of Tackle is pointing at which database.
+7. Save the web.config file.
+8. Open up the IIS Manager. Depending upon where you’ve installed and copied the new folder to, you may or may not see the physical directory in the list.
+9. Follow the standard IIS directions for creating a new virtual directory, pointing the physical location to the new folder created in step 1 and 2.
+10. There are some specific properties to set in the virtual directory. These include:
+a. Application Pool – You can change this to the one created by Tackle or any other application pool as long it is running against the .Net Framework version v2.0.50727
+b. Authentication – Enable Windows Authentication ONLY.
+c. Default Document – Set this to default.aspx
+d. Session Timeout – Set this to 480 minutes
+e. ASP.Net – ensure this is set to v2.0.50727
+11. Once all this has been setup, you should now be able to browse to your new instance of Tackle that is pointed at the new instance of the database.
+Additional Help
+ Contact the Tackle Development Alias at tntds@microsoft.com
+ Please see the FAQ at http://www.codeplex.com/Tackle/Project/ListForums.aspx for more information.
