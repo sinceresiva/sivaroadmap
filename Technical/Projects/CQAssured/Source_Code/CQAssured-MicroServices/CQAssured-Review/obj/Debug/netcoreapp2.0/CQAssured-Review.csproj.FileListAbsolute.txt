@@ -1,0 +1,10 @@
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\bin\Debug\netcoreapp2.0\CQAssured-Review.deps.json
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\bin\Debug\netcoreapp2.0\CQAssured-Review.runtimeconfig.json
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\bin\Debug\netcoreapp2.0\CQAssured-Review.runtimeconfig.dev.json
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\bin\Debug\netcoreapp2.0\CQAssured-Review.dll
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\bin\Debug\netcoreapp2.0\CQAssured-Review.pdb
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\obj\Debug\netcoreapp2.0\CQAssured-Review.csproj.CoreCompileInputs.cache
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\obj\Debug\netcoreapp2.0\CQAssured-Review.AssemblyInfoInputs.cache
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\obj\Debug\netcoreapp2.0\CQAssured-Review.AssemblyInfo.cs
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\obj\Debug\netcoreapp2.0\CQAssured-Review.dll
+C:\Siva\SivaRoadMap-Git\Technical\Projects\CQAssured\Source_Code\CQAssured-MicroServices\CQAssured-Review\obj\Debug\netcoreapp2.0\CQAssured-Review.pdb
