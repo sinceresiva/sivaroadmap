@@ -1,0 +1,10 @@
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\bin\MCD\Debug\netcoreapp2.0\www.deps.json
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\bin\MCD\Debug\netcoreapp2.0\www.runtimeconfig.json
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\bin\MCD\Debug\netcoreapp2.0\www.runtimeconfig.dev.json
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\bin\MCD\Debug\netcoreapp2.0\www.dll
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\bin\MCD\Debug\netcoreapp2.0\www.pdb
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\obj\MCD\Debug\netcoreapp2.0\www.csproj.CoreCompileInputs.cache
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\obj\MCD\Debug\netcoreapp2.0\www.AssemblyInfoInputs.cache
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\obj\MCD\Debug\netcoreapp2.0\www.AssemblyInfo.cs
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\obj\MCD\Debug\netcoreapp2.0\www.dll
+G:\Siva\Work\SivaRoadMap\Technical\Projects\QTee\Source_Code\QTee_Web\www\obj\MCD\Debug\netcoreapp2.0\www.pdb
