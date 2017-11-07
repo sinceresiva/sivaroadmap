@@ -1,0 +1,7 @@
+---
+applications:
+- name: SimpleCloudFoundryQTee
+  env:
+    ASPNETCORE_ENVIRONMENT: development
+  services:
+   - SCFConfigServer

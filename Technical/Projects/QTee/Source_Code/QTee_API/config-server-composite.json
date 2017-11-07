@@ -1,0 +1,19 @@
+{
+  "composite": [
+    {
+      "git": {
+        "uri": "https://github.com/sinceresiva/config-repo.git"
+      }
+    },
+    {
+      "vault": {
+        "host": "x.x.x.x",
+        "port": 8200,
+        "scheme": "http",
+        "backend": "secret",
+        "defaultKey": "application",
+        "profileSeparator": ","
+      }
+    }
+  ]
+}

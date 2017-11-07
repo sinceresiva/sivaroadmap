@@ -5,16 +5,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using www.Models;
-
 namespace www.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
-        {
+        public IActionResult Index() =>
             //return View();
-            return new FilePathResult("ng-app-review/src/index.html", "text/html");
-        }
+            new Redirect("ng-app-review/src/index.html");
 
         public IActionResult About()
         {

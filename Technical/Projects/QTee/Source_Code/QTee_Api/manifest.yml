@@ -1,7 +1,8 @@
 ---
 applications:
-- name: QTee_API
+- name: QTeeAPI
   env:
     ASPNETCORE_ENVIRONMENT: development
   services:
-   - QTeeConfigServer
+   - SCFConfigServer
+
