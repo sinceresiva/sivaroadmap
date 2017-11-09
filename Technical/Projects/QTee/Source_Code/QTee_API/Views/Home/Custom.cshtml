@@ -1,4 +1,5 @@
-﻿@{
+﻿@using SimpleCloudFoundry.Model;
+@{
     ViewData["Title"] = "Custom Config Values";
 }
 <h2>@ViewData["Title"].</h2>
@@ -7,3 +8,18 @@
 <h4>environment=@ViewData["environment"]</h4>
 <h4>expansion=@ViewData["expansion"]</h4>
 <h4>foo=@ViewData["foo"]</h4>
+<h3>Headers:@ViewData["header"]</h3>
+<hr/>
+@{
+    if(ViewData["header"]!=null)
+    {
+        var headerList = ViewData["header"] as Header[];
+        foreach(var item in headerList)
+        {
+            @Html.Raw("<div>" + item.Name + "</div>")            
+        }
+    }
+}    
+
+
+

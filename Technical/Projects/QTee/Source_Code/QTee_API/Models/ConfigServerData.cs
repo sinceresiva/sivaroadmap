@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
 namespace SimpleCloudFoundry.Model
 {
 
@@ -20,7 +19,14 @@ namespace SimpleCloudFoundry.Model
         public string Vault { get; set; }
         public string environment {get; set; }
         public string expansion {get; set; }
-       
+
+        public Header[] header {get; set; }       
+    }
+
+    public class Header{
+        public string Name { get; set; }
+
+        public string Population { get; set; }
     }
 
     public class Info

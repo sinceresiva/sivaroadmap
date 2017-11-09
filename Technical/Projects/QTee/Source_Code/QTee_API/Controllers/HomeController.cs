@@ -166,11 +166,13 @@ namespace SimpleCloudFoundry.Controllers
                 ViewData["environment"] = data.environment ?? "Not returned"; 
                 ViewData["expansion"] = data.expansion ?? "Not returned";   
                 ViewData["foo"] = data.Foo ?? "Not returned";                                                                              
+                ViewData["header"] = data.header ?? null;   
             }
             else {
                 ViewData["environment"] = "Not Available";                            
                 ViewData["expansion"] = "Not Available";  
                 ViewData["foo"] = "Not Available";
+                ViewData["header"] = "Not Available";
             }
         }
 
