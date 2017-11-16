@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CompletedFilterPipe, TodolistComponent } from './index';
+// ag-grid
+import { AgGridModule } from 'ag-grid-ng2/main';
 
 @NgModule({
     declarations: [
@@ -10,7 +12,10 @@ import { CompletedFilterPipe, TodolistComponent } from './index';
     ],
     imports: [
         FormsModule,
-        BrowserModule
+        BrowserModule,
+        AgGridModule.withComponents(
+            [ TodolistComponent ]
+        )
     ],
     exports: [
         CompletedFilterPipe,

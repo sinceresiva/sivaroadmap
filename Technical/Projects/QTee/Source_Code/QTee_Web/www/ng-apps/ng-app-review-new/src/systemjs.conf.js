@@ -8,10 +8,16 @@
     // ENV
     global.ENV = global.ENV || 'development';
 
+    // specify the bundle
+    // The key is the path to the bundle, the value is the array of modules in the bundle
+    var bundles = {
+        'node_modules/ag-grid/dist/ag-grid.min.js': ['ag-grid/main.js']             
+    }
+
     // map tells the System loader where to look for things
     var map = {
         'app': 'src/tmp/app',
-        'test': 'src/tmp/test'
+        'test': 'src/tmp/test'        
     };
 
     // packages tells the System loader how to load when no filename and/or no extension
@@ -24,14 +30,22 @@
         },
         'rxjs': {
             defaultExtension: 'js'
-        }
+        },
+        'ag-grid-ng2': {
+            defaultExtension: "js"
+           },
+        'ag-grid': {
+            defaultExtension: "js"
+        }        
     };
 
     // List npm packages here
     var npmPackages = [
         '@angular',
         'rxjs',
-        'lodash'
+        'lodash',
+        'ag-grid-ng2',
+        'ag-grid'
     ];
 
     // Add package entries for packages that expose barrels using index.js
@@ -72,7 +86,8 @@
 
     var config = {
         map: map,
-        packages: packages
+        packages: packages,
+        bundles: bundles
     };
 
     // filterSystemConfig - index.html's chance to modify config before we register it.

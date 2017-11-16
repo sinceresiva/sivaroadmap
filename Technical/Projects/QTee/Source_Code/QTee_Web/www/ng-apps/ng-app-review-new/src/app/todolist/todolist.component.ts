@@ -11,6 +11,7 @@ export class TodolistComponent {
     public todo: Todo;
     private list: Todo[];
     private showCompleted: Boolean;
+    private myGridOptions: any = {};
 
     constructor() {
         this.showCompleted = true;
@@ -18,6 +19,18 @@ export class TodolistComponent {
         this.list = [
             new Todo('Its cool'),
             new Todo('Hello', true)
+        ];
+
+        this.myGridOptions.columnDefs = [
+            {headerName: 'Make', field: 'make', width: 300},
+            {headerName: 'Model', field: 'model', width: 300},
+            {headerName: 'Price', field: 'price', width: 300}
+        ];
+
+        this.myGridOptions.rowData = [
+            {make: 'Toyota', model: 'Celica', price: 35000},
+            {make: 'Ford', model: 'Mondeo', price: 32000},
+            {make: 'Porsche', model: 'Boxter', price: 72000}
         ];
     }
 
