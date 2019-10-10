@@ -55,7 +55,7 @@
     "@types/jasmine": "2.5.47",
     "@types/lodash": "4.14.61",
     "@types/selenium-webdriver": "^2.53.42",
-    "bootstrap-sass": "^3.3.7",
+    "bootstrap-sass": "^3.4.1",
     "codelyzer": "2.1.1",
     "core-js": "^2.4.1",
     "del": "~2.2.2",
