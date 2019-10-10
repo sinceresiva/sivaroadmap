@@ -1,0 +1,16 @@
+<div>
+    <h5>Add new event page</h5>
+    <hr/>
+    <input type="submit" class="btn btn-primary" value="Submit">
+    <button class="btn btn-secondary" (click)="doCancel()">Cancel</button>
+
+    <ng-template #someTemplate let-name="name" let-hobbies="hobbies">
+        <h2>Hello World - {{name}}</h2>
+        <div *ngFor="let hobby of hobbies">
+            <h6>{{hobby}}</h6>
+        </div>
+    </ng-template>
+
+    <ng-content *ngTemplateOutlet="someTemplate; context:{name: 'Siva', hobbies:['cricket','youtube']}">
+    </ng-content>
+</div>

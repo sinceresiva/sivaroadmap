@@ -1,0 +1,6 @@
+<div>
+    <h5>Upcoming Angular events</h5>
+    <hr/>
+    <app-event-thumbnail #thumbnail *ngFor="let event of events" (click)="handleClickEventForThumbnail(event.name)" [event]="event" (thumbnailButtonClicked)="thumbnailButtonClicked($event)"></app-event-thumbnail>
+    <button class="btn btn-primary" (click)="thumbnail.foo()">Call foo</button>
+</div>
