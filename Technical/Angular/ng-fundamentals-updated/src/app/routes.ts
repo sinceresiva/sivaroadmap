@@ -10,11 +10,6 @@ export const appRoutes: Routes = [
     { path: 'events/new', component: CreateEventComponent, canDeactivate: ['canDeactivateCreateEventService']},
     { path: 'events/:id', component: EventDetailsComponent, canActivate: [EventRouteActivatorService] },
     { path: 'user', loadChildren: () => import('./user/user.module').then(m => m.UserModule) },
-    // { path : 'user', loadChildren: () => UserModule },
-    // { path: 'user', loadChildren: './user/user.module#UserModule' },
     { path: '404', component: Error404Component },
     { path: '', redirectTo: 'events', pathMatch: 'full' }
-    // { path : 'user', loadChildren: () => UserModule }
-    // { path: 'user', loadChildren: './user/user.module' }
-    // { path: 'user', loadChildren: './user/user.module#UserModule' }, // ./user/user.module#UserModule
 ];

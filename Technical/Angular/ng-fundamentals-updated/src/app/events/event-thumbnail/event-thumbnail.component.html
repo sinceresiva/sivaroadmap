@@ -8,7 +8,7 @@
             <span>Location: {{event?.location.address}} </span>
             <span>&nbsp;</span>
             <span>{{event?.location.city}} , {{event?.location.country}} </span>
-            <button class="btn btn-primary" (click)="handleButtonClicked()">Click Me</button>
+            <button class="btn btn-primary" (click)="handleButtonClicked($event)">Click Me</button>
         </div>
         <div *ngIf="event?.onlineUrl">Online URL: {{event?.onlineUrl}}</div>
         <div [hidden]="!event?.isMobileOnly">Mobile Only: Yes</div>

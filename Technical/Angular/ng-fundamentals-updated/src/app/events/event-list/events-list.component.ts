@@ -17,6 +17,7 @@ export class EventsListComponent implements OnInit {
    *
    */
   events: IEvent[] = [];
+  thumbnail;
   constructor(private toastrService: ToastrService, private activatedRoute: ActivatedRoute) {
   }
   ngOnInit() {

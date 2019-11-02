@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { AuthService } from '../user/services/auth.service'
 @Component({
     selector: 'app-navbar',
     templateUrl: './navbar.component.html',
@@ -9,7 +9,10 @@ import { Component } from '@angular/core';
     ]
 })
 export class NavBarComponent {
-    searchTerm: String = '';
+    searchTerm = '';
+    constructor(public authSvc: AuthService) {
+
+    }
     searchSessions = (searchTerm) => {
         console.log('Search');
     }

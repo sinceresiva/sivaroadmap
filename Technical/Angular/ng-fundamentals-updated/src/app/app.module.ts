@@ -13,6 +13,7 @@ import { EventDataService } from './services/eventdata.service';
 import { EventRouteActivatorService } from './services/eventRoute-activator.service';
 import { EventDataResolver } from './services/eventdata.resolver.service';
 import { CommonModule } from '@angular/common';
+import { AuthService } from './user/services/auth.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CommonModule } from '@angular/common';
     {
       provide: 'canDeactivateCreateEventService',
       useValue: checkDirtyState
-    }
+    },
+    AuthService
   ],
   bootstrap: [AppComponent]
 })

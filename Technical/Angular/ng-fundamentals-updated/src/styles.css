@@ -59,3 +59,7 @@ button {
 .fontitalic {
     font-style: italic;
 }
+
+.form-group > em {
+    color: red;
+}
