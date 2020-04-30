@@ -118,6 +118,14 @@ after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
 
+ag-grid-ng2@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-ng2/-/ag-grid-ng2-8.0.0.tgz#aae20564fe10d3c7afbb5ee1ff7e4311a66c2fc7"
+
+ag-grid@^14.1.1:
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/ag-grid/-/ag-grid-14.2.0.tgz#126a3de777d990dae200e4bded894cce0e18e9e2"
+
 agent-base@2:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-2.0.1.tgz#bd8f9e86a8eb221fffa07bd14befd55df142815e"
@@ -1578,8 +1586,8 @@ extend-shallow@^2.0.1:
     is-extendable "^0.1.0"
 
 extend@3, extend@^3.0.0, extend@~3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.0.tgz#5a474353b9f3353ddd8176dfd37b91c83a46f1d4"
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
 
 extglob@^0.3.1:
   version "0.3.2"
