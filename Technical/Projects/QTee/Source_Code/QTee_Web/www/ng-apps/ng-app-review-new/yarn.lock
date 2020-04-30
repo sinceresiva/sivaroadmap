@@ -118,6 +118,14 @@ after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
 
+ag-grid-ng2@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-ng2/-/ag-grid-ng2-8.0.0.tgz#aae20564fe10d3c7afbb5ee1ff7e4311a66c2fc7"
+
+ag-grid@^14.1.1:
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/ag-grid/-/ag-grid-14.2.0.tgz#126a3de777d990dae200e4bded894cce0e18e9e2"
+
 agent-base@2:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-2.0.1.tgz#bd8f9e86a8eb221fffa07bd14befd55df142815e"
@@ -1240,8 +1248,8 @@ di@^0.0.1:
   resolved "https://registry.yarnpkg.com/di/-/di-0.0.1.tgz#806649326ceaa7caa3306d75d985ea2748ba913c"
 
 diff@^3.0.1, diff@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/diff/-/diff-3.2.0.tgz#c9ce393a4b7cbd0b058a725c93df299027868ff9"
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
 
 dom-serialize@^2.2.0:
   version "2.2.1"
