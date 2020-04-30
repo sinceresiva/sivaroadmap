@@ -118,6 +118,14 @@ after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
 
+ag-grid-ng2@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-ng2/-/ag-grid-ng2-8.0.0.tgz#aae20564fe10d3c7afbb5ee1ff7e4311a66c2fc7"
+
+ag-grid@^14.1.1:
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/ag-grid/-/ag-grid-14.2.0.tgz#126a3de777d990dae200e4bded894cce0e18e9e2"
+
 agent-base@2:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-2.0.1.tgz#bd8f9e86a8eb221fffa07bd14befd55df142815e"
@@ -3083,8 +3091,8 @@ lodash.memoize@^4.1.0:
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
 
 lodash.mergewith@^4.6.0:
-  version "4.6.0"
-  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55"
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.mergewith/-/lodash.mergewith-4.6.2.tgz#617121f89ac55f59047c7aec1ccd6654c6590f55"
 
 lodash.pick@^4.2.1:
   version "4.4.0"
