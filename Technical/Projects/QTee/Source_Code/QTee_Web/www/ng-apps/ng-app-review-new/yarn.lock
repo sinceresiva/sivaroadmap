@@ -118,6 +118,14 @@ after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
 
+ag-grid-ng2@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/ag-grid-ng2/-/ag-grid-ng2-8.0.0.tgz#aae20564fe10d3c7afbb5ee1ff7e4311a66c2fc7"
+
+ag-grid@^14.1.1:
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/ag-grid/-/ag-grid-14.2.0.tgz#126a3de777d990dae200e4bded894cce0e18e9e2"
+
 agent-base@2:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/agent-base/-/agent-base-2.0.1.tgz#bd8f9e86a8eb221fffa07bd14befd55df142815e"
@@ -3670,8 +3678,8 @@ path-key@^1.0.0:
   resolved "https://registry.yarnpkg.com/path-key/-/path-key-1.0.0.tgz#5d53d578019646c0d68800db4e146e6bdc2ac7af"
 
 path-parse@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.5.tgz#3c1adf871ea9cd6c9431b6ea2bd74a0ff055c4c1"
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
 
 path-root-regex@^0.1.0:
   version "0.1.2"
